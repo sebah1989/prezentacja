@@ -1,0 +1,8 @@
+<div class="container">
+     <%= form_tag sessions_path, class: "form-signin" %>
+     <h2 class="form-signin-heading">Zaloguj się!</h2>
+     <%= text_field_tag :email, params[:email], placeholder: "Email..", class: "form-control", autocomplete: :off %>
+     <%= password_field_tag :password, nil, placeholder: "Wpisz hasło..", class: "form-control", autocomplete: :off %>
+     <%= submit_tag "Zaloguj", class:"btn btn-lg btn-primary btn-block " %>
+        
+ </div>
