@@ -4,6 +4,7 @@ Prezentacja::Application.routes.draw do
   resources :sessions
   get 'zaloguj' => 'sessions#new', :as => 'zaloguj'
   get 'wyloguj' => 'sessions#destroy', :as => 'wyloguj'
+  root 'users#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
